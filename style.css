@@ -1,0 +1,238 @@
+/* 
+Global classes / overrides 
+*/ 
+
+html, body {
+    height: 100%;
+    font-size: 16px;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+  
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    padding: 15px 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 13px
+    }
+    .main-nav-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 1.25rem;
+        padding: 15px 0;
+    }
+    #hamburger-icon {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: row;
+      text-decoration: none;
+      color: white
+    }
+    .homepage-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .inset-div {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      padding: 10px;
+      margin: 0;
+    }
+    .three-wide {
+      flex-direction: column;
+    }
+    .third-container {
+      border-right: 0px;
+      border-bottom: 1px solid lightgray;
+    }
+  }
+  
+  /* Font classes */
+  .merriweather { font-family: 'Merriweather', serif; }
+        .oswald { font-family: 'Oswald', sans-serif; }
+          .lato { font-family: 'Lato', sans-serif; }
+  
+  .button {
+    border-radius: 5px;
+    color: #000;
+    display: block;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .site-header {
+    background-color: rgb(194, 180, 171);
+    border-bottom: 5px solid #506739;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* 1. Nav */
+  
+  h1 {
+    color: #506739;
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+  
+  .main-nav {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.25rem;
+    padding: 15px 0;
+  }
+  
+  .main-nav p {
+    color: #fff;
+    padding-left: 15px;
+  }
+  
+
+
+  
+  
+  /* 2. Subheader */
+  
+  .secondary-text {
+    background-color: #adadad;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .secondary-text p {
+    font-size: 1.7rem;
+    margin: 0;
+  }
+  
+  .strikeout {
+    text-decoration: line-through;
+  }
+  
+  .underline {
+    border-bottom: 3px solid #f2ff00;
+  }
+  
+  /* 3. Main background area */
+  
+  .homepage-area {
+    background: url('https://i.ibb.co/qx0p73r/dji-fly-20221125-152120-686-1669438971552-photo.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 60%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .homepage-area h2 {
+    font-weight: bold;
+  }
+
+  .campsite-area {
+    background: url('https://i.ibb.co/YNVYqRv/hoh-campground-1080b88121e4f11fa74e4c05199a71b2-1.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 60%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .campsite-area h2 {
+    font-weight: bold;
+  }
+
+  .dome-area {
+    background: url('https://i.ibb.co/D7tqKjQ/pjbwfr5duogwc6ciqmen.webp') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 60%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .dome-area h2 {
+    font-weight: bold;
+  }
+
+  .wedding-area {
+    background: url('https://i.ibb.co/VjHMCQh/Hoh-Rainforest-Elopement-Diana-Philip-ONP-Elopement-The-Foxes-Photography-2019-144.webp') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 60%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .wedding-area h2 {
+    font-weight: bold;
+  }
+  
+  .inset-div {
+    background-color: rgba(255,255,255,0.9);
+    margin: 25px 25px 0 0;
+    padding: 25px;
+    width: 380px;
+    height: 230px;
+    padding: 4%;
+    box-shadow: 0 0 5px rgba(0,0,0,.75);
+  }
+  
+  .main-cta {
+    background-color: #506739;
+    border-bottom: 2px solid #3b3b38;
+  }
+  
+  /* 4. Three column container */
+  
+  .three-wide {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .third-container {
+    border-right: 1px solid lightgray;
+    margin: 10px 0;
+    padding: 2%;
+  }
+  
+  .third-container h3 {
+    font-size: 1.5rem;
+  }
+  
+  .third-container:last-child {
+    border: none;
+  }
+  
+  .secondary-cta {
+    background-color: #adadad;
+    border-bottom: 2px solid #878787;
+  }
+  
+  /* 5. Footer */
+  
+  .site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 25px;
+  }
+
+  .darkmode {
+    
+  }
