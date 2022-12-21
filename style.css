@@ -28,13 +28,7 @@ html, body {
         font-size: 1.25rem;
         padding: 15px 0;
     }
-    #hamburger-icon {
-      display: flex;
-      align-items: flex-end;
-      flex-direction: row;
-      text-decoration: none;
-      color: white
-    }
+
     .homepage-area {
       display: flex;
       flex-direction: column;

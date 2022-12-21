@@ -1,7 +1,8 @@
-const button = document.querySelector('#darkmode')
+const form = document.querySelector('#emailform')
 
-const changeBackgroundColor = () => {
-    document.querySelector('body').style.backgroundColor = darkmode
-}
-
-button.addEventListener('click', changeBackgroundColor)
+form.addEventListener('submit', (event) => {
+  event.preventDefault()
+  if (true) {
+    alert('You have been added to our mailing list!')
+  } 
+})
